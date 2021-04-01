@@ -1,0 +1,65 @@
+body {
+    font-family: 'Dank mono', monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: #000;
+    height: 100%;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 72px;
+
+}
+
+.sidebar ul > li {
+    margin: 12px 0;
+}
+
+.sidebar a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+  text-decoration: underline;
+}
+
+.sidebar--active{
+    left: 0px;
+}
+
+
+.button-close {
+    border: none;
+    background: none;
+    position: absolute;
+    font-size: 72px;
+    transform: rotate(45deg);
+    color: #fff;
+    right: 6px;
+    top: -12px;
+}
+
+.button-menu {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    position: fixed;
+    right: 24px;
+    top: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+}
